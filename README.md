@@ -1,1 +1,1 @@
-lxstcellpage.github.io
+https://lxstcell.github.io/LxstCell/
