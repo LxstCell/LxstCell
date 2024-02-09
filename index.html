@@ -10,7 +10,13 @@
   </head>
   
   <body>
-    
+    <hr color="white" size="4%">
+    <center>
+    <h1 style="color: white" id="dateTime">
+      Time (GMT+7)
+    </h1>
+    </center>
+    <hr color="white" size="4%">
     
 <div class="button">
   <center>
@@ -23,7 +29,7 @@
     </a>
     <a href="" download="Profile-โปรไฟล์">
     <button>
-      [profile]
+      [Button]
       <br>
       Download!
     </button>
@@ -41,9 +47,12 @@
     
   </body>
   <script>
-  
-  
-  
+ 
+ 
+  setInterval(() => {
+  const d = new Date()
+  document.getElementById("dateTime").innerHTML = `⏱️Time Interval<br>${d.getHours()}:${d.getMinutes() < 10 ? "0" + d.getMinutes() : d.getMinutes()}:${d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds()}`
+  })
   
     
   </script>
@@ -121,7 +130,7 @@
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(150deg, red 3%, yellow 38%, lime 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
+    animation: gradient 8s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
 }
