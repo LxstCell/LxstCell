@@ -27,13 +27,13 @@
       Download!
     </button>
     </a>
-    <a href="https://lxstcell.github.io/LxstCell/readme.md">
-    <button>
+    
+    <button onclick="back()">
       [Back]
       <br>
-      CLICK!
+      Download!
     </button>
-    </a>
+    
  </center>
 </div>
 
@@ -48,6 +48,10 @@
   </body>
   <script>
  
+ 
+ function back() {
+   window.history.back();
+ }
  
   setInterval(() => {
   const d = new Date()
@@ -71,11 +75,11 @@
     font-size: 100%;
     font-family: Lucida Console, Monospace;
     font-weight: bold;
-    margin: auto;
+    
     }
     
     button:hover {
-    margin: auto;
+    
     font-size: 105%;
     opacity: 1;
     animation: buttonHoverText 8s infinite;
