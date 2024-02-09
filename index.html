@@ -14,14 +14,14 @@
     
 <div class="button">
   <center>
-   <a href="https://lxstcell.github.io/LxstCell/content.png" download="Content-สารบัญ">
+   <a href="https://lxstcell.github.io/LxstCell/content.png" download="content-สารบัญ">
     <button>
       [content]
       <br>
       Download!
     </button>
     </a>
-    <a href="https://example.com" download="Profile-โปรไฟล์">
+    <a href="" download="Profile-โปรไฟล์">
     <button>
       [profile]
       <br>
@@ -62,19 +62,16 @@
     font-size: 100%;
     font-family: Lucida Console, Monospace;
     font-weight: bold;
-    
+    margin: auto;
     }
     
     button:hover {
-    margin: 1px;
-    opacity: 0.8;
-    border-color: rgba(0,0,0, 1);
-    padding: 10px 42%;
-    border-radius: 10px;
-    font-size: 100%;
-    font-family: Lucida Console, Monospace;
-    font-weight: bold;
+    margin: auto;
+    font-size: 105%;
+    opacity: 1;
     animation: buttonHoverText 8s infinite;
+    animation-duration: -6s;
+    /*animation: buttonHoverSlide 2s infinite;*/
     }
     
     @keyframes buttonHoverText {
@@ -86,9 +83,17 @@
       }
       80% {
         color: purple;
+        
       }
       100% {
         color: red;
+      }
+    }
+    
+    @keyframes buttonHoverSlide {
+      
+      100% {
+        transform: translateX(100%);
       }
     }
     
@@ -115,7 +120,7 @@
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(0deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    background: linear-gradient(150deg, red 3%, yellow 38%, lime 68%, rgba(255,25,25,1) 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
